@@ -1,1 +1,47 @@
-# Graftscan-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VISADERM DASHBOARD</title>
+<style>
+body {
+    font-family: Arial;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+.card {
+    background: #111;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>VISADERM DASHBOARD</h1>
+
+<div class="card">UF: <span id="uf">--</span></div>
+<div class="card">Fios: <span id="fios">--</span></div>
+<div class="card">Score: <span id="score">--</span></div>
+
+<br>
+
+<input type="file">
+<br><br>
+
+<button onclick="analisar()">Analisar</button>
+
+<script>
+function analisar() {
+    document.getElementById("uf").innerText = Math.floor(Math.random()*50)+200;
+    document.getElementById("fios").innerText = Math.floor(Math.random()*100)+400;
+    document.getElementById("score").innerText = Math.floor(Math.random()*10)+85;
+}
+</script>
+
+</body>
+</html>
